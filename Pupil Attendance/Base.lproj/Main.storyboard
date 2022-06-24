@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eqf-ph-e2u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mms-DB-Jod">
+            <objects>
+                <tableViewController id="kF6-BU-yfj" customClass="ViewController" customModule="Pupil_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7af-jL-HpC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Student" id="467-em-xxN">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="467-em-xxN" id="FAz-lH-Ctk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kF6-BU-yfj" id="xwV-Df-8Iv"/>
+                            <outlet property="delegate" destination="kF6-BU-yfj" id="nKt-cJ-eKd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6fE-aj-uOf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rz-Zj-VBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="-277"/>
+        </scene>
+        <!--Absent View Controller-->
+        <scene sceneID="pq9-C0-UYV">
+            <objects>
+                <tableViewController id="gXS-Oa-2vd" customClass="AbsentViewController" customModule="Pupil_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qG1-gy-gLT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AbsentStudent" id="Lcg-N9-WDF">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lcg-N9-WDF" id="aef-Ug-LvM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gXS-Oa-2vd" id="Q9p-q2-jvl"/>
+                            <outlet property="delegate" destination="gXS-Oa-2vd" id="qId-vn-WJV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Nx3-GZ-E7F"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAu-Oz-AhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="408"/>
+        </scene>
+        <!--Present-->
+        <scene sceneID="ZKQ-wO-pGT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C4G-ni-b6p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Present" image="person.fill.checkmark.rtl" catalog="system" selectedImage="person.fill.checkmark.rtl" id="vSC-Vf-CLg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="69Q-Ml-Xd5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kF6-BU-yfj" kind="relationship" relationship="rootViewController" id="lrj-GV-w59"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emX-om-kLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="-276"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ade-zL-ZyJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Eqf-ph-e2u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zb3-W4-GHq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="C4G-ni-b6p" kind="relationship" relationship="viewControllers" id="VoE-pd-MZj"/>
+                        <segue destination="55M-47-wAz" kind="relationship" relationship="viewControllers" id="Kv9-zA-4jW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7Q-xc-WbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="50"/>
+        </scene>
+        <!--Absent-->
+        <scene sceneID="4Eh-go-S5v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="55M-47-wAz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Absent" image="person.fill.xmark.rtl" catalog="system" id="NO3-VC-ivA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5aH-5p-nMk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gXS-Oa-2vd" kind="relationship" relationship="rootViewController" id="iGR-zp-bYz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Z2-Iw-uVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="409"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill.checkmark.rtl" catalog="system" width="128" height="88"/>
+        <image name="person.fill.xmark.rtl" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
